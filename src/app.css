@@ -14,10 +14,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-html{
-  background-color: rgb(36,36,36);
-  color: white;
-}
 
 a {
   font-weight: 500;
@@ -34,6 +30,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: rgb(36,36,36);
+  color: white;
 }
 
 h1 {
