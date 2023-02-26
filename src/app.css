@@ -46,6 +46,7 @@ h1 {
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
+  background-color: rgb(36,36,36);
 }
 
 button {
