@@ -230,7 +230,7 @@ setInterval(count_down,1000)
 <style>
 main{
   zoom:0.5;
-  padding-bottom: 70%;
+  /* padding-bottom: 70%; */
 }
 .grid{
   display: grid;
