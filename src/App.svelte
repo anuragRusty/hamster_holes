@@ -51,7 +51,9 @@ function handle_click(i){
    life_stack.length = life_stack.length - 1;
    cells[i].snake = false;
    play_music(SNAKE_BITE_SOUND);
- }else if(cells[i].hamster){
+ }
+
+ if(cells[i].hamster){
      cells[i].hamster = false;
      score = score +1;
      const highScore = parseInt(localStorage.getItem("score")) || 0
@@ -60,12 +62,14 @@ function handle_click(i){
      }
      cells[i].bg = HAM_HIT;
      play_music(PUNCH_SOUND);
-  }else if(cells[i].ten){
+  }
+  if(cells[i].ten){
      time = time + 10;
      cells[i].bg= EMPTY_HOLE;
      cells[i].ten = false;
      play_music(BONUS_SOUND);
-  }else if(cells[i].heart){
+  }
+  if(cells[i].heart){
     life = life + 1;
     life_stack = [...life_stack,HEART];
     cells[i].bg = EMPTY_HOLE;
